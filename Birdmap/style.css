@@ -1,0 +1,174 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F1EB;
+}
+
+canvas {
+  display: block;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+p {
+	font-family: 'Times';
+	line-height: 150%;
+	color: #3F3F3F;
+	font-style: normal;
+	margin: 0;
+}
+
+
+/******************
+
+	Classes
+
+******************/
+
+.h1 {
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.b1 {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.column {
+	margin-right: 30px;
+	flex: 1;
+	height: auto;
+}
+
+.category {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.category p {
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 8px;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.p5_canvas {
+	width: 100%;
+}
+
+.birdName {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.birdDetail {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.pinnedBird {
+	padding: 0 24px 0 24px;
+	gap: 4px;
+	margin-bottom: 16px;
+}
+
+.disabledClearButton {
+	opacity: 0.5;
+}
+
+.title {
+	font-weight: 600;
+}
+
+
+/******************
+
+	Elements
+
+******************/
+
+#nav_bar {
+	overflow: hidden;
+	background-color: #EDE7DF;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 160px;
+	padding: 24px 48px 24px 48px;
+	z-index: 1;
+}
+
+#master_canvas {
+	width: 100%;
+	padding: 184px 0 128px 48px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+#column5 {
+	margin-right: 0;
+	border-left: 1px dotted #154575;
+}
+
+#column5 div{
+	width: 100%;
+}
+
+#hoverBox {
+	position: absolute;
+	width: 320px;
+	background: #EDE7DF;
+	border: 2px solid #3F3F3F;
+	border-radius: 8px;
+	padding: 24px;
+	gap: 4px;
+	visibility: hidden;
+}
+
+#pinnedListHeader {
+	padding: 0 24px 0 24px;
+	height: 42px;
+}
+
+#pinnedListHeaderTitle {
+	font-weight: 400;
+	font-size: 16px;
+	width: 80%;
+	position: absolute;
+}
+
+#clearButton {
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 600;
+	position: absolute;
+	right: 24px;
+}
+
+#order_selector {
+	padding: 16px 0 0 0;
+}
+
+#order_selector fieldset {
+	border-width: 0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+}
+
+#order_selector fieldset input:checked {
+	accent-color: #6F5739;
+}
+
+#order_selector p {
+	margin-right: 8px;
+}

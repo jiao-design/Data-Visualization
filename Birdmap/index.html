@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="nav_bar">
+		<p class="h1">Birdmap</p>
+		<p class="b1">Exploring the taxonomy of birds</p>
+		<form method="post" action="/Tests/Post/" id="order_selector">
+		    <fieldset>
+				<p class="title">Filter by order: </p>
+				<input type="checkbox" name="Caprimulgiformes" value="Caprimulgiformes" checked><p>Caprimulgiformes</p>
+				<input type="checkbox" name="Charadriiformes" value="Charadriiformes" checked><p>Charadriiformes</p>
+				<input type="checkbox" name="Passeriformes" value="Passeriformes" checked><p>Passeriformes</p>
+				<input type="checkbox" name="Piciformes" value="Piciformes" checked><p>Piciformes</p>
+				<input type="checkbox" name="Psittaciformes" value="Psittaciformes" checked><p>Psittaciformes</p>
+				<input type="checkbox" name="Others" value="Others" checked disabled><p>Others</p>
+		    </fieldset>
+		</form>
+	</div>
+	<div id='master_canvas'>
+		<div id='column1' class='column'>
+			<div class='category'>
+				<p>Domestic</p>
+				<div class='p5_canvas' id='p5_domestic'></div>
+			</div>
+			<div class='category'>
+				<p>Species</p>
+				<div class='p5_canvas' id='p5_species'></div>
+			</div>
+		</div>
+		<div id='column2' class='column'>
+			<div class='category'>
+				<p>Intergrade</p>
+				<div class='p5_canvas' id='p5_intergrade'></div>
+			</div>
+			<div class='category'>
+				<p>ISSF</p>
+				<div class='p5_canvas' id='p5_issf'></div>
+			</div>
+		</div>
+		<div id='column3' class='column'>
+			<div class='category'>
+				<p>Form</p>
+				<div class='p5_canvas' id='p5_form'></div>
+			</div>
+			<div class='category'>
+				<p>Hybrid</p>
+				<div class='p5_canvas' id='p5_hybrid'></div>
+			</div>
+		</div>
+		<div id='column4' class='column'>
+			<div class='category'>
+				<p>Slash</p>
+				<div class='p5_canvas' id='p5_slash'></div>
+			</div>
+			<div class='category'>
+				<p>Spuh</p>
+				<div class='p5_canvas' id='p5_spuh'></div>
+			</div>
+		</div>
+		<div id='column5' class='column'>
+			<div id='pinnedListHeader'>
+				<p id='pinnedListHeaderTitle'>No Bird has been pinned yet.</p>
+				<p id='clearButton' class='disabledClearButton'>Clear</p>
+			</div>
+			<div id='pinnedList'></div>
+		</div>
+	</div>
+	<div id='hoverBox'>
+		<p class='birdName' id='hoverBoxName'></p>
+		<p class='birdDetail' id='hoverBoxSciName'></p>
+		<p class='birdDetail' id='hoverBoxOrder'></p>
+		<p class='birdDetail' id='hoverBoxFamily'></p>
+	</div>
+</body>
+
+<!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/jquery-3.6.3.min.js"></script>
+  <script language="javascript" type="text/javascript" src="Class_Ball.js"></script>
+  <script language="javascript" type="text/javascript" src="Birds.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+</html>
